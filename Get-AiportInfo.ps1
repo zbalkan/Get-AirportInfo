@@ -4,9 +4,15 @@
 .DESCRIPTION
    Based on GlobalAirports.Net by Shrayas Rajagopal (shrayasr), this toy cmdlet can return the Global Airports DB data by parameters
 .EXAMPLE
-   Example of how to use this cmdlet
+   Get-AirportInfo # Returns all airports
 .EXAMPLE
-   Another example of how to use this cmdlet
+   Get-AirportInfo -ICAOCode VOMM
+.EXAMPLE
+    Get-AirportInfo -IATACode MAA
+.EXAMPLE
+    Get-AirportInfo -City LONDON
+.EXAMPLE
+    Get-AirportInfo -Country Turkey
 #>
 function Get-AirportInfo
 {
