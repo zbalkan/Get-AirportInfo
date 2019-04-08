@@ -9,6 +9,9 @@ Based on [GlobalAirports.Net](https://github.com/shrayasr/GlobalAirports.Net) by
 4. Move the dll into the `bin` directory.
 
 ## Usage
+Use `Get-Help -Name "Get-AirportInfo" -Category Function -Full` command for full help documentation.
+You use any parameters below or you may not use any if you want to get the whole list.
+
 ### All Airports
 `Get-AirportInfo`
 ### By ICAO Code
