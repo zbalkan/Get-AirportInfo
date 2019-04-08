@@ -3,6 +3,10 @@
    A Powershell wrapper for the Global Airports DB data.
 .DESCRIPTION
    Based on GlobalAirports.Net by Shrayas Rajagopal (shrayasr), this toy cmdlet can return the Global Airports DB data by parameters
+.INPUTS
+    String
+.OUTPUTS
+    List of PSObjects
 .EXAMPLE
    Get-AirportInfo # Returns all airports
 .EXAMPLE
@@ -13,12 +17,13 @@
     Get-AirportInfo -City LONDON
 .EXAMPLE
     Get-AirportInfo -Country Turkey
+.LINK
+    https://github.com/zbalkan/Get-AirportInfo
 #>
 function Get-AirportInfo
 {
     [CmdletBinding(DefaultParameterSetName = 'All')]
     [Alias()]
-    [OutputType([PSObject])]
     Param
     (
         # Get by ICAO Code
